@@ -5,7 +5,7 @@ Este proyecto simula una aplicación con frontend y backend separados para demos
 
 ## Requisitos Previos
 
-Asegúrate de tener Node.js instalado en tu sistema para poder ejecutar los comandos de npm y node. Puedes descargarlo desde [Node.js official website](https://nodejs.org/).
+Tener Node.js instalado en tu sistema para poder ejecutar los comandos de npm y node.
 
 ## Configuración del Proyecto
 
@@ -15,7 +15,7 @@ Para configurar y ejecutar el proyecto, sigue estos pasos:
 
 1. Clona este repositorio en tu máquina local usando:
    ```bash
-   git clone URL_DEL_REPOSITORIO
+   git clone .....
    ```
 2. Navega al directorio del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
    ```bash
