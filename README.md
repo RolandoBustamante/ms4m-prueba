@@ -1,70 +1,58 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mi Proyecto de Simulación Frontend y Backend
 
-## Available Scripts
+Este proyecto simula una aplicación con frontend y backend separados para demostrar cómo interactúan entre sí.
 
-In the project directory, you can run:
+## Requisitos Previos
 
-### `npm start`
+Asegúrate de tener Node.js instalado en tu sistema para poder ejecutar los comandos de npm y node. Puedes descargarlo desde [Node.js official website](https://nodejs.org/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Configuración del Proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para configurar y ejecutar el proyecto, sigue estos pasos:
 
-### `npm test`
+### Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clona este repositorio en tu máquina local usando:
+   ```bash
+   git clone URL_DEL_REPOSITORIO
+   ```
+2. Navega al directorio del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+### Ejecución
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Levantar el Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para iniciar el servidor frontend, ejecuta:
+```bash
+npm start
+```
+Esto levantará el servidor de desarrollo y abrirá automáticamente la aplicación en tu navegador.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Levantar el Backend
 
-### `npm run eject`
+Necesitas abrir una nueva terminal para el servidor backend. Navega al directorio del proyecto si no estás ya allí y ejecuta:
+```bash
+node server.js
+```
+Este comando levantará el servidor backend que maneja las peticiones API del frontend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Estructura de la Interfaz
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+La interfaz está diseñada para mostrar preguntas agrupadas en secciones para facilitar la visualización y el orden. Las preguntas están organizadas de la siguiente manera:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Preguntas 1 y 2**: Para ver estas preguntas, haz click en el botón o link correspondiente en la interfaz.
+- **Preguntas 3 y 4**: Similar a las preguntas 1 y 2, usa el botón o link proporcionado para ver estas preguntas.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#Respuesta Ejercicios:
+3.1. Tonelaje de cada equipo de carga a zona de descarga.
+  Para el componente ListaViajes, utilicé React y ECharts, siguiendo la solicitud de la prueba de emplear específicamente ECharts para visualizar los datos. A pesar de no tener experiencia previa con ECharts, apliqué useState y useEffect en React para manejar el estado y procesar los datos dinámicamente. Este enfoque facilitó la integración efectiva de visualizaciones complejas
+3.2 Tonelaje por material para cada hora del turno.
+  Para el reporte de tonelaje por material y hora, utilicé React con useState y useEffect para manejar el estado y procesar los datos dinámicamente. Usé reduce() para agrupar el tonelaje por material y hora, y luego ordené los datos en orden descendente por hora. Este enfoque permitió una estructuración eficiente y una renderización optimizada en la tabla.
+3.3 . Diferencia de tonelaje por hora.
+  Para el componente DiferenciaDeTonelaje, utilicé React con useState y useEffect para recibir datosAct y datosPrev como props y calcular la diferencia de tonelaje por hora relativa. Ajusté relativehour para emparejar correctamente los turnos y utilicé reduce() para agrupar los valores por hora. Este enfoque optimizó el procesamiento de datos antes de renderizarlos en una tabla ordenada. 
+3.4 Tonelaje por turno
+  En el componente TonelajePorTurno, recibí datosAct y datosPrev como props y utilicé useState y useEffect para filtrar y agrupar el tonelaje por material y hora relativa. Implementé un select para que el usuario pudiera elegir un material, y luego utilicé reduce() para calcular el tonelaje total por turno, diferenciándolo visualmente en la tabla. 
